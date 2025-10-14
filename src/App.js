@@ -23,6 +23,71 @@ function App() {
     alt="DJ Sethi Profile"
     className="mx-auto mt-6 w-48 h-48 rounded-full shadow-[0_0_30px_rgba(255,0,255,0.8)] hover:scale-105 transition-transform duration-300"
   />
+{/* 🌟 Upcoming Events Section */}
+<section className="mt-20 text-center">
+  <h2 className="text-3xl font-bold animate-neon">Upcoming Events</h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 max-w-5xl mx-auto">
+    {/* 🎉 Event 1 */}
+    <div className="bg-gray-900 p-6 rounded-2xl shadow-[0_0_20px_rgba(255,0,255,0.5)] hover:scale-105 transition-transform duration-300">
+      <h3 className="text-xl font-bold text-pink-400">Club Mirage, Delhi</h3>
+      <p className="text-gray-300 mt-2">Saturday, 2nd November 2025</p>
+      <p className="mt-3 text-gray-400 text-sm">Get ready for a night full of EDM & Bollywood mashups 🔥</p>
+    </div>
+
+    {/* 🎉 Event 2 */}
+    <div className="bg-gray-900 p-6 rounded-2xl shadow-[0_0_20px_rgba(0,255,255,0.5)] hover:scale-105 transition-transform duration-300">
+      <h3 className="text-xl font-bold text-cyan-400">Sky Lounge, Mumbai</h3>
+      <p className="text-gray-300 mt-2">Friday, 15th November 2025</p>
+      <p className="mt-3 text-gray-400 text-sm">DJ Sethi spinning live beats all night 🎧</p>
+    </div>
+
+    {/* 🎉 Event 3 */}
+    <div className="bg-gray-900 p-6 rounded-2xl shadow-[0_0_20px_rgba(255,255,0,0.5)] hover:scale-105 transition-transform duration-300">
+      <h3 className="text-xl font-bold text-yellow-400">Bass Arena, Goa</h3>
+      <p className="text-gray-300 mt-2">New Year’s Eve 2025</p>
+      <p className="mt-3 text-gray-400 text-sm">Countdown to 2026 with DJ Sethi’s exclusive set 🎆</p>
+    </div>
+  </div>
+</section>
+
+{/* 📞 Contact Me Section */}
+<section className="mt-20 text-center mb-20">
+  <h2 className="text-3xl font-bold animate-neon">Contact Me</h2>
+  <p className="mt-4 text-gray-300">For bookings and collaborations, reach out:</p>
+
+  <div className="mt-6">
+    <p className="text-lg text-pink-400 font-semibold">📧 djsethiofficial@gmail.com</p>
+    <p className="text-lg text-cyan-400 mt-2">📞 +91 98765 43210</p>
+  </div>
+
+  <div className="flex justify-center gap-6 mt-8">
+    <a
+      href="https://instagram.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-pink-500 hover:text-pink-400 text-3xl transition-transform transform hover:scale-125"
+    >
+      <i className="fab fa-instagram"></i>
+    </a>
+    <a
+      href="https://youtube.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-red-500 hover:text-red-400 text-3xl transition-transform transform hover:scale-125"
+    >
+      <i className="fab fa-youtube"></i>
+    </a>
+    <a
+      href="https://soundcloud.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-orange-400 hover:text-orange-300 text-3xl transition-transform transform hover:scale-125"
+    >
+      <i className="fab fa-soundcloud"></i>
+    </a>
+  </div>
+</section>
 
   {/* 🌐 Social Links */}
   <div className="flex justify-center gap-6 mt-6">
