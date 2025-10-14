@@ -91,3 +91,10 @@ function App() {
 }
 
 export default App;
+<section className="mt-20 text-center">
+  <h2 className="text-3xl font-bold">About DJ Sethi</h2>
+  <p className="mt-4 text-lg text-gray-300 max-w-xl mx-auto">
+    DJ Sethi – Mixing beats since 2015 🎧 Bringing EDM, Bollywood, and Hip-Hop to the floor 🔥
+  </p>
+  <img src="/dj-profile.png" alt="DJ Sethi" className="mx-auto mt-6 w-48 rounded-full shadow-lg" />
+</section>
