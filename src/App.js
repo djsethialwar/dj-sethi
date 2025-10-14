@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
@@ -8,6 +9,49 @@ function App() {
       <h1 className="text-5xl font-bold text-center mt-10 animate-neon hover:animate-glowPulse transition-all duration-500">
         🎧 DJ Sethi Live 🎵
       </h1>
+{/* 🌟 DJ Profile Section */}
+<section className="mt-20 text-center">
+  <h2 className="text-3xl font-bold animate-neon">About DJ Sethi</h2>
+
+  <p className="mt-4 text-lg text-gray-300 max-w-xl mx-auto">
+    🎧 DJ Sethi – Bringing energy to the dance floor since 2015! 
+    Known for EDM, Bollywood & Hip-Hop mixes that set the crowd on fire 🔥
+  </p>
+
+  <img
+    src="/dj-profile.png"
+    alt="DJ Sethi Profile"
+    className="mx-auto mt-6 w-48 h-48 rounded-full shadow-[0_0_30px_rgba(255,0,255,0.8)] hover:scale-105 transition-transform duration-300"
+  />
+
+  {/* 🌐 Social Links */}
+  <div className="flex justify-center gap-6 mt-6">
+    <a
+      href="https://instagram.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-pink-500 hover:text-pink-400 text-3xl transition-transform transform hover:scale-125"
+    >
+      <i className="fab fa-instagram"></i>
+    </a>
+    <a
+      href="https://youtube.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-red-500 hover:text-red-400 text-3xl transition-transform transform hover:scale-125"
+    >
+      <i className="fab fa-youtube"></i>
+    </a>
+    <a
+      href="https://soundcloud.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-orange-400 hover:text-orange-300 text-3xl transition-transform transform hover:scale-125"
+    >
+      <i className="fab fa-soundcloud"></i>
+    </a>
+  </div>
+</section>
 
       {/* 💥 Tagline */}
       <p className="text-lg mt-4">Bass itna tez ki dil hil jaye 💥</p>
