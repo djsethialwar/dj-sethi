@@ -26,3 +26,28 @@ body {
   transform: scale(1.05);
   box-shadow: 0 0 25px #ff33ff, 0 0 40px #ff00ff;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Slow pulse for background */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
+
+/* Neon circle glowing pulse */
+@keyframes pulse-neon {
+  0%, 100% {
+    box-shadow: 0 0 20px #f0f, 0 0 40px #f0f, 0 0 60px #f0f;
+  }
+  50% {
+    box-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #f0f;
+  }
+}
+.animate-pulse-neon {
+  animation: pulse-neon 2s infinite;
+}
