@@ -88,6 +88,13 @@ function App() {
     </p>
   </div>
 </section>
+<audio
+  controls
+  className="mt-6 w-80 border-2 border-pink-500 rounded-full bg-black"
+>
+  <source src="/dj-beat.mp3" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
 
   <div className="flex justify-center gap-6 mt-8">
     <a
