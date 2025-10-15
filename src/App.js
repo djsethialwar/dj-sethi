@@ -60,6 +60,34 @@ function App() {
     <p className="text-lg text-pink-400 font-semibold">📧 djsethiofficial@gmail.com</p>
     <p className="text-lg text-cyan-400 mt-2">📞 +91 98765 43210</p>
   </div>
+{/* 🎶 DJ Music Player Section */}
+<section className="mt-20 text-center mb-20">
+  <h2 className="text-3xl font-bold animate-neon">🎵 Now Playing</h2>
+  <p className="mt-2 text-gray-400">Turn up the bass & feel the vibes 🔥</p>
+
+  <div className="mt-8 flex flex-col items-center">
+    {/* 🎧 Music Cover Image */}
+    <img
+      src="/dj-profile.png"
+      alt="DJ Track"
+      className="w-60 h-60 rounded-2xl shadow-[0_0_30px_rgba(255,0,255,0.6)] animate-pulse"
+    />
+
+    {/* 🎵 Audio Player */}
+    <audio
+      controls
+      autoPlay={false}
+      className="mt-6 w-80 bg-transparent border-2 border-pink-500 rounded-full"
+    >
+      <source src="/dj-beat.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <p className="mt-3 text-pink-400 text-lg font-semibold">
+      🔊 DJ Sethi - Club Night Remix
+    </p>
+  </div>
+</section>
 
   <div className="flex justify-center gap-6 mt-8">
     <a
