@@ -2,66 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ✅ Global Styles */
-html, body {
+/* General page styling */
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-color: #000; /* dark background */
-  color: #fff; /* white text */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #000;
+  color: white;
 }
 
-/* ✅ Center everything in viewport */
-#root {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Neon text effect */
+.neon {
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
 }
 
-/* ✅ Optional glowing text effect */
-.glow {
-  text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+/* Neon glow for images */
+.neon-img {
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+  transition: 0.3s;
 }
 
-/* ✅ Button hover animation */
-button {
-  transition: all 0.3s ease-in-out;
-}
-
-button:hover {
+.neon-img:hover {
   transform: scale(1.05);
-}
-
-/* ✅ Custom scrollbar (optional) */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #ff007f;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track {
-  background-color: #111;
-}
-
-/* ✅ For smooth fade animations */
-.fade-in {
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* ✅ Responsive Text Scaling */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1rem;
-  }
+  box-shadow: 0 0 25px #ff33ff, 0 0 40px #ff00ff;
 }
